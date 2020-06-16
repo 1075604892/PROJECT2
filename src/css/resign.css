@@ -1,0 +1,61 @@
+body{
+	background-image: url("../../img/sky.jpg");
+    background-attachment:fixed;<!--保持背景不动-->
+}
+
+.logandresign table{
+    margin:auto;
+    border-radius: 20px;
+    width: 350px;
+    height: 500px;
+    background-color: #f1f1f1;
+}
+
+.logandresign td{
+	border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.logandresign input[type = 'text']{
+    border-width: 1px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px; 
+    border-color:black; 
+}
+
+.logandresign input[type = 'password']{
+    border-width: 1px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px; 
+    border-color:black; 
+}
+
+.bigbutton{
+    margin-top:30px; 
+    width: 200px;  
+    padding:8px;  
+    background-color: #333;  
+    border-color: #357ebd;  
+    color: #fff;  
+    border-radius: 10px; 
+    vertical-align: middle;  
+    border: 1px solid transparent;  
+    font-weight: 900;  
+    font-size:125% 
+}
+
+.bigbutton:hover{
+	background-color: #555;
+}
+
+.footer{
+	position: absolute; 
+    bottom: 0;
+}
+
+.resign{
+    text-align: center;
+    margin-top:100px;
+}

@@ -1,0 +1,153 @@
+body{
+	background-image: url('../../img/sky.jpg');
+    background-attachment:fixed;<!--保持背景不动-->
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-weight: 900;
+    font-size: 125%;
+}
+
+.nav li {
+    float: left;
+}
+
+.active{
+    background-color:#4CAF50;
+}
+
+.nav li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+    background-color: #555;
+}
+
+.nav .dropdown {
+    display: inline-block;
+    float: right;
+}
+
+.nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav .dropdown-content a:hover:not(.active) {
+	color: white;
+	background-color: #555
+}
+
+.nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.line {
+	list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 125%;
+}
+
+.line a{
+    color: #D4F2E7;
+}
+
+.showimages table{
+	width: 100%;
+	margin: auto;
+    background-repeat:repeat-x;
+}
+
+.showimages td{
+   	width: 350px;
+	height: 350px;
+	float: top;
+	padding: 20px;
+	border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.showimages img{
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.title{
+	font-size: 200%;
+	font-weight: 900;
+}
+
+.content{
+    font-size: 150%;
+    font-weight: 900;
+    overflow: hidden;/*超出部分隐藏*/
+    text-overflow: ellipsis;/*超出部分显示省略号*/
+    display: -webkit-box;
+    -webkit-line-clamp: 4;/*可以写两行*/
+    -webkit-box-orient: vertical;
+    margin:5px auto;
+}
+
+.tdimage{
+    background: rgba(240,255,255,0.3);
+}
+
+.tdimage:hover{
+    background: rgba(240,255,255,0.5);
+}
+
+.tdimage p{
+    -webkit-box-orient: vertical;
+    margin:5px auto;
+}
+
+.auxi{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}
+
+.circlebtn{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    background-color: #FAF0E6;
+    border-width: 1px;
+    border-color: black;
+}
+
+.circlebtn:hover{
+    background: #FF8C00;
+}
+
+.header img{
+	display: block;
+}
+
+

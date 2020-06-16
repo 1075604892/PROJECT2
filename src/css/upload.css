@@ -1,0 +1,132 @@
+body{
+	background-image: url("../../img/sky.jpg");
+    background-attachment:fixed;<!--保持背景不动-->
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-weight: 900;
+    font-size: 125%;
+}
+
+.nav li {
+    float: left;
+}
+
+.active{
+    background-color:#4CAF50;
+}
+
+.nav li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+    background-color: #555;
+}
+
+.nav .dropdown {
+    display: inline-block;
+    float: right;
+}
+
+.nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.nav .dropdown-content a:hover:not(.active) {
+	color: white;
+	background-color: #555
+}
+
+.nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.simline{
+    font-weight: 900;
+    font-size: 125%;
+    color: #333;
+}
+
+input[type = 'file']{
+    width: 150px;
+    height: 45px;
+     opacity: 0;
+}
+
+input[type='text']{
+	border-width: 1px;
+	width: 200px;
+	height: 25px;
+	border-radius: 10px; 
+	border-color:black; 
+}
+
+.copy{
+    background-image:url("../../img/icon/wenjian.png");
+    background-color: #B5B5B5;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: 40px;
+    border-width: 0px;
+    border-radius: 10px;  
+}
+
+.copy:hover{
+    background-color: #FF7F24; 
+}
+
+.bigbutton{
+    margin-top:30px; 
+    width: 200px;  
+    padding:8px;  
+    background-color: #333;  
+    border-color: #357ebd;  
+    color: #fff;  
+    border-radius: 10px; 
+    vertical-align: middle;  
+    border: 1px solid transparent;  
+    font-weight: 900;  
+    font-size:125% 
+}
+
+.bigbutton:hover{
+	background-color: #555;
+}
+
+table{
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-weight: 900;
+    font-size: 125%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+textarea{
+    border-radius: 10px;
+    border-color:black;
+    border-width: 1px; 
+}

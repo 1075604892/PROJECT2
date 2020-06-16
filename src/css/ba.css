@@ -1,0 +1,430 @@
+#skybackground{
+	background-image: url("file:D:/wze/program/MyFirstWeb/src/../img/sky.jpg");
+    background-attachment:fixed;<!--保持背景不动-->
+}
+
+.logandresign table{
+    margin:auto;
+    border-radius: 20px;
+    width: 350px;
+    height: 500px;
+    background-color: #f1f1f1;
+}
+
+.logandresign td{
+	border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.logandresign input{
+    border-width: 1px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px; 
+    border-color:black; 
+}
+
+.header{
+	background-image: url("file:D:/wze/program/MyFirstWeb/src/../img/greatwall.jpg");
+	padding: 100px;
+	text-align: center;
+    font-size:400%; 
+    font-weight: 900;
+    color: white;
+}
+
+.fly{
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+
+}
+
+
+.fly button:hover{
+	background: #FF8C00;
+}
+
+
+.circlebtn{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    background-color: #FAF0E6;
+    border-width: 1px;
+    border-color: black;
+}
+
+.circlebtn:hover{
+    background: #FF8C00;
+}
+
+.change{
+    text-align: center;
+    font-size: 125%;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.change .now{
+    text-decoration:none;
+    color: black;
+}
+
+.footer{
+	position: absolute; 
+    bottom: 0;
+}
+
+.introduce table{
+    margin: auto;
+    width: 100%;
+    font-weight: 900;
+    font-size: 125%;
+    color: white;
+}
+
+.introduce td{
+    border-radius: 20px;
+    background-color:#555;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: rgba(85,85,85,0.6);
+}
+
+.introduce td:hover{
+    background: rgba(85,85,85,0.8);
+}
+
+.introduce .center{
+    text-align: center;
+}
+
+.introduce .left{
+    text-align: left;
+}
+
+.list table{
+    border-radius: 20px;
+    background: rgba(85,85,85,0.6);
+    width: 100%;  
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.list table:hover{
+    background: rgba(85,85,85,0.8);
+}
+
+.small../img{
+    width: 160px;
+    height: 160px;
+}
+
+.list .smalltitle{
+    font-weight: 900;
+    font-size: 125%;
+}
+
+.list .smallcontent{
+    font-weight: 900;
+    font-size: 100%;
+}
+
+.list p{
+overflow: hidden;/*超出部分隐藏*/
+text-overflow: ellipsis;/*超出部分显示省略号*/
+display: -webkit-box;
+-webkit-line-clamp: 2;/*可以写三行*/
+-webkit-box-orient: vertical;
+margin:5px auto;
+}
+
+#log{
+	text-align: center;
+	margin-top:100px;
+}
+
+.bigbutton{
+    margin-top:30px; 
+    width: 200px;  
+    padding:8px;  
+    background-color: #333;  
+    border-color: #357ebd;  
+    color: #fff;  
+    border-radius: 10px; 
+    vertical-align: middle;  
+    border: 1px solid transparent;  
+    font-weight: 900;  
+    font-size:125% 
+}
+
+.bigbutton:hover{
+	background-color: #555;
+}
+
+.upload input[type='name']{
+	border-width: 1px;
+	width: 200px;
+	height: 25px;
+	border-radius: 10px; 
+	border-color:black; 
+}
+
+
+
+.line {
+	list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-weight: 900;
+    font-size: 125%;
+}
+
+.simline{
+    font-weight: 900;
+    font-size: 125%;
+    color: #333;
+}
+
+.show../img table{
+	width: 100%;
+	margin: auto;
+    background-repeat:repeat-x;
+}
+
+.show../img td{
+   	width: 350px;
+	height: 350px;
+	float: top;
+	padding: 20px;
+	border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.show../img img{
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.title{
+	font-size: 200%;
+	font-weight: 900;
+}
+
+.content{
+    font-size: 100%;
+    font-weight: 900;
+}
+
+.guide {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-weight: 900;
+    font-size: 125%;
+}
+
+.guide li {
+    float: left;
+}
+
+.active{
+    background-color:#4CAF50;
+}
+
+.guide li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.guide li a:hover:not(.active) {
+    background-color: #555;
+}
+
+.guide .dropdown {
+    display: inline-block;
+    float: right;
+}
+
+.guide .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.guide .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.guide .dropdown-content a:hover:not(.active) {
+	color: white;
+	background-color: #555
+}
+
+.guide .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.upload table{
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    font-weight: 900;
+    font-size: 125%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.upload textarea{
+    border-radius: 10px;
+    border-color:black;
+    border-width: 1px; 
+}
+
+.tdimage{
+    background: rgba(240,255,255,0.3);
+}
+
+.tdimage:hover{
+    background: rgba(240,255,255,0.5);
+}
+
+.tdimage p{
+    overflow: hidden;/*超出部分隐藏*/
+    text-overflow: ellipsis;/*超出部分显示省略号*/
+    display: -webkit-box;
+    -webkit-line-clamp: 5;/*可以写三行*/
+    -webkit-box-orient: vertical;
+    margin:5px auto;
+}
+
+input[type="radio"]{
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-bottom: 1px;
+}
+
+.searchpane {
+    font-size: 125%;
+    font-weight: 900%;
+}
+
+.searchpane input[type='name'] {
+    border-width: 1px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px; 
+    border-color:black;
+    width: 600px; 
+    background: rgba(85,85,85,0.1);
+}
+
+.searchpane textarea{
+    border-color:black;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 600px;
+    background: rgba(85,85,85,0.1); 
+}
+
+.leftguide ul{
+    padding: 10px;
+    list-style:none;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    background: rgba(240,255,255,0.3);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 125%;
+}
+
+.leftguide li{
+    padding: 2px;
+}
+
+.leftguide ul:hover{
+    background: rgba(240,255,255,0.5);
+}
+
+.leftguide input{
+    background: rgba(85,85,85,0.1);
+    width: 200px;
+    height: 26px;
+    border-radius: 10px;
+    border-color: rgba(240,255,255,0.5);
+}
+
+.leftguide button{
+    border-radius: 10px;
+    width:200px; 
+    height:36px;
+    border-width: 0;
+    font-weight: 900;
+    font-size:80%;
+    background: rgba(85,85,85,0.2);
+}
+
+.leftguide button:hover{
+    background: rgba(76,175,80,0.5);
+}
+
+.result td{
+    padding: 10px 30px 0 30px; 
+}
+
+.result img{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  
+}
+
+.screen select{
+    width: 200px;
+    height:30px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    font-weight: 900;
+    border-width: 0px;
+}
+
+.upload input[type = 'file']{
+    width: 150px;
+    height: 45px;
+     opacity: 0;
+}
+
+.copy{
+    background-image:url("D:/wze/program/MyFirstWeb/src/../img/icon/wenjian.png");
+    background-color: #B5B5B5;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: 40px;
+    border-width: 0px;
+    border-radius: 10px;  
+}
+
+.copy:hover{
+    background-color: #FF7F24; 
+}
+
+
