@@ -142,7 +142,7 @@ if(empty($_SESSION['hot'])){
             echo'</a>';
         }else{
             echo'<a href="src/introduction.php?ImageID='.$row['ImageID'].'">';
-            echo'<img title="'.$row['Description'].'" src="img/square/square-medium/'.$row['PATH'].'">';
+            echo'<img width="150px" height="150px" title="'.$row['Description'].'" src="img/normal/medium/'.$row['PATH'].'">';
             echo'</a>';
         }
         
@@ -167,7 +167,7 @@ if(empty($_SESSION['hot'])){
             echo'</a>';
         }else{
             echo'<a href="src/introduction.php?ImageID='.$row['ImageID'].'">';
-            echo'<img title="'.$row['Description'].'" src="img/square/square-medium/'.$row['PATH'].'">';
+            echo'<img width="150px" height="150px" title="'.$row['Description'].'" src="img/normal/medium/'.$row['PATH'].'">';
             echo'</a>';
         }
         

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>浏览页-云驿图片站</title>
+<title>搜索页-云驿图片站</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/search.css">
 </head>
@@ -92,7 +92,7 @@ if(!empty($_GET['title'])||!empty($_GET['content'])){
         echo'<table cellspacing="20px">';
         echo'<tr>';
         echo'<td width= "25px">';
-        echo'<a href="introduction.php?ImageID='.$row['ImageID'].'"><img src="../img/square/square-medium/'.$row["PATH"].'"></a>';
+        echo'<a href="introduction.php?ImageID='.$row['ImageID'].'"><img width="150px" height="150px" src="../img/normal/medium/'.$row["PATH"].'"></a>';
         echo'<td class="shortcontent">';
         echo'<p class="smalltitle">标题：'.$row["Title"].'</p>';
         if($row["Description"] === NULL){

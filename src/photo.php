@@ -62,7 +62,7 @@ if ($result->num_rows > 0){
             echo'<table cellspacing="20px">';
             echo'<tr>';
             echo'<td width= "25px">';
-            echo'<a href="introduction.php?ImageID='.$row1['ImageID'].'"><img src="../img/square/square-medium/'.$row1["PATH"].'"></a>';
+            echo'<a href="introduction.php?ImageID='.$row1['ImageID'].'"><img width="150px" height="150px" src="../img/normal/medium/'.$row1["PATH"].'"></a>';
             echo'<td class="shortcontent">';
             echo'<p class="smalltitle">标题：'.$row1["Title"].'</p>';
             if($row1["Description"] === NULL){

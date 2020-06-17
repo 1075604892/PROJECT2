@@ -61,7 +61,7 @@ echo '<td class="center" rowspan="2">';
 if(empty($row['PATH'])){
     echo '<img src="../img/normal/medium/none.png"></td>';
 }else{
-    echo '<img src="../img/normal/medium/'.$row['PATH'].'"></td>';
+    echo '<img width="640px" src="../img/normal/medium/'.$row['PATH'].'"></td>';
 }
 echo '<td class="center">';
 echo '<p>已收藏人数：'.$total_records.'</p>';

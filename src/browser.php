@@ -318,7 +318,7 @@ echo'<tr>';
 for($i=0;$i<5;$i++){
     $row0 = $result0->fetch_assoc();
     if(!empty($row0['ImageID'])&&!empty($row0['PATH'])){
-    echo'<td><a href="introduction.php?ImageID='.$row0['ImageID'].'"><img title="'.$row0['Title'].'" src="../img/square/square-medium/'.$row0['PATH'].'"></a></td>';
+    echo'<td><a href="introduction.php?ImageID='.$row0['ImageID'].'"><img width="150px" height="150px" title="'.$row0['Title'].'" src="../img/normal/medium/'.$row0['PATH'].'"></a></td>';
     }else if(!empty($row0['ImageID'])&&empty($row0['PATH'])){
     echo'<td><a href="introduction.php?ImageID='.$row0['ImageID'].'"><img title="'.$row0['Title'].'" src="../img/square/square-medium/none.png"></a></td>';
     }
@@ -329,7 +329,7 @@ echo'<tr>';
 for($i=0;$i<5;$i++){
     $row0 = $result0->fetch_assoc();
     if(!empty($row0['ImageID'])&&!empty($row0['PATH'])){
-    echo'<td><a href="introduction.php?ImageID='.$row0['ImageID'].'"><img title="'.$row0['Title'].'" src="../img/square/square-medium/'.$row0['PATH'].'"></a></td>';
+        echo'<td><a href="introduction.php?ImageID='.$row0['ImageID'].'"><img width="150px" height="150px" title="'.$row0['Title'].'" src="../img/normal/medium/'.$row0['PATH'].'"></a></td>';
     }else if(!empty($row0['ImageID'])&&empty($row0['PATH'])){
     echo'<td><a href="introduction.php?ImageID='.$row0['ImageID'].'"><img title="'.$row0['Title'].'" src="../img/square/square-medium/none.png"></a></td>';
     }
@@ -340,7 +340,7 @@ echo'<tr>';
 for($i=0;$i<5;$i++){
     $row0 = $result0->fetch_assoc();
     if(!empty($row0['ImageID'])&&!empty($row0['PATH'])){
-    echo'<td><a href="introduction.php?ImageID='.$row0['ImageID'].'"><img title="'.$row0['Title'].'" src="../img/square/square-medium/'.$row0['PATH'].'"></a></td>';
+        echo'<td><a href="introduction.php?ImageID='.$row0['ImageID'].'"><img width="150px" height="150px" title="'.$row0['Title'].'" src="../img/normal/medium/'.$row0['PATH'].'"></a></td>';
     }else if(!empty($row0['ImageID'])&&empty($row0['PATH'])){
     echo'<td><a href="introduction.php?ImageID='.$row0['ImageID'].'"><img title="'.$row0['Title'].'" src="../img/square/square-medium/none.png"></a></td>';
     }
@@ -386,6 +386,6 @@ echo "</div>";
 }
 ?>
 
-<p class="footer">虚空备案号：19302016001</p>
+<p id="footer">虚空备案号：19302016001</p>
 </body>
 </html>
