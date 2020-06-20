@@ -85,7 +85,7 @@ if(!empty($_GET['ImageID'])){
     $db_name="photos";
     $conn=new mysqli($servername,$db_username,$db_password,$db_name);
     
-    $sqlCou = "SELECT *, COUNT(*) FROM travelimage GROUP BY Country_RegionCodeISO ORDER BY COUNT(*) DESC LIMIT 4";
+    $sqlCou = "SELECT *, COUNT(*) FROM travelimage GROUP BY Country_RegionCodeISO ORDER BY COUNT(*) DESC LIMIT 10";
     $queryCou = mysqli_query($conn,$sqlCou);
     $resultCou = $conn -> query($sqlCou);
 ?>
@@ -148,7 +148,7 @@ if(!empty($_GET['ImageID'])){
             $resultCou3 = $conn -> query($sqlCou3);
             $rowCou3= $resultCou3->fetch_assoc();
 
-            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 4";
+            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 20";
             $queryCit = mysqli_query($conn,$sqlCit);
             $resultCit = $conn -> query($sqlCit);
             while($rowCit = $resultCit->fetch_assoc()){
@@ -172,7 +172,7 @@ if(!empty($_GET['ImageID'])){
             $resultCou3 = $conn -> query($sqlCou3);
             $rowCou3= $resultCou3->fetch_assoc();
 
-            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 4";
+            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 20";
             $queryCit = mysqli_query($conn,$sqlCit);
             $resultCit = $conn -> query($sqlCit);
             while($rowCit = $resultCit->fetch_assoc()){
@@ -196,7 +196,7 @@ if(!empty($_GET['ImageID'])){
             $resultCou3 = $conn -> query($sqlCou3);
             $rowCou3= $resultCou3->fetch_assoc();
 
-            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 4";
+            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 20";
             $queryCit = mysqli_query($conn,$sqlCit);
             $resultCit = $conn -> query($sqlCit);
             while($rowCit = $resultCit->fetch_assoc()){
@@ -220,7 +220,151 @@ if(!empty($_GET['ImageID'])){
             $resultCou3 = $conn -> query($sqlCou3);
             $rowCou3= $resultCou3->fetch_assoc();
 
-            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 4";
+            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 20";
+            $queryCit = mysqli_query($conn,$sqlCit);
+            $resultCit = $conn -> query($sqlCit);
+            while($rowCit = $resultCit->fetch_assoc()){
+                echo'second.options.add(new Option("'.$rowCit['AsciiName'].'"));';
+            }
+            ?>
+        }
+
+        if(first.selectedIndex == 5)
+        {
+            <?php
+            $sqlCou2 = "SELECT *, COUNT(*) FROM travelimage GROUP BY Country_RegionCodeISO ORDER BY COUNT(*) DESC LIMIT 4,4";
+            $queryCou2 = mysqli_query($conn,$sqlCou2);
+            $resultCou2 = $conn -> query($sqlCou2);   
+            
+            $rowCou2 = $resultCou2->fetch_assoc();
+            
+            
+            $sqlCou3 = "SELECT * FROM geocountries_regions WHERE ISO = '".$rowCou2['Country_RegionCodeISO']."'";
+            $queryCou3 = mysqli_query($conn,$sqlCou3);
+            $resultCou3 = $conn -> query($sqlCou3);
+            $rowCou3= $resultCou3->fetch_assoc();
+
+            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 20";
+            $queryCit = mysqli_query($conn,$sqlCit);
+            $resultCit = $conn -> query($sqlCit);
+            while($rowCit = $resultCit->fetch_assoc()){
+                echo'second.options.add(new Option("'.$rowCit['AsciiName'].'"));';
+            }
+            ?>
+        }
+
+        if(first.selectedIndex == 6)
+        {
+            <?php
+            $sqlCou2 = "SELECT *, COUNT(*) FROM travelimage GROUP BY Country_RegionCodeISO ORDER BY COUNT(*) DESC LIMIT 5,5";
+            $queryCou2 = mysqli_query($conn,$sqlCou2);
+            $resultCou2 = $conn -> query($sqlCou2);   
+            
+            $rowCou2 = $resultCou2->fetch_assoc();
+            
+            
+            $sqlCou3 = "SELECT * FROM geocountries_regions WHERE ISO = '".$rowCou2['Country_RegionCodeISO']."'";
+            $queryCou3 = mysqli_query($conn,$sqlCou3);
+            $resultCou3 = $conn -> query($sqlCou3);
+            $rowCou3= $resultCou3->fetch_assoc();
+
+            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 20";
+            $queryCit = mysqli_query($conn,$sqlCit);
+            $resultCit = $conn -> query($sqlCit);
+            while($rowCit = $resultCit->fetch_assoc()){
+                echo'second.options.add(new Option("'.$rowCit['AsciiName'].'"));';
+            }
+            ?>
+        }
+
+        if(first.selectedIndex == 7)
+        {
+            <?php
+            $sqlCou2 = "SELECT *, COUNT(*) FROM travelimage GROUP BY Country_RegionCodeISO ORDER BY COUNT(*) DESC LIMIT 6,6";
+            $queryCou2 = mysqli_query($conn,$sqlCou2);
+            $resultCou2 = $conn -> query($sqlCou2);   
+            
+            $rowCou2 = $resultCou2->fetch_assoc();
+            
+            
+            $sqlCou3 = "SELECT * FROM geocountries_regions WHERE ISO = '".$rowCou2['Country_RegionCodeISO']."'";
+            $queryCou3 = mysqli_query($conn,$sqlCou3);
+            $resultCou3 = $conn -> query($sqlCou3);
+            $rowCou3= $resultCou3->fetch_assoc();
+
+            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 20";
+            $queryCit = mysqli_query($conn,$sqlCit);
+            $resultCit = $conn -> query($sqlCit);
+            while($rowCit = $resultCit->fetch_assoc()){
+                echo'second.options.add(new Option("'.$rowCit['AsciiName'].'"));';
+            }
+            ?>
+        }
+
+        if(first.selectedIndex == 8)
+        {
+            <?php
+            $sqlCou2 = "SELECT *, COUNT(*) FROM travelimage GROUP BY Country_RegionCodeISO ORDER BY COUNT(*) DESC LIMIT 7,7";
+            $queryCou2 = mysqli_query($conn,$sqlCou2);
+            $resultCou2 = $conn -> query($sqlCou2);   
+            
+            $rowCou2 = $resultCou2->fetch_assoc();
+            
+            
+            $sqlCou3 = "SELECT * FROM geocountries_regions WHERE ISO = '".$rowCou2['Country_RegionCodeISO']."'";
+            $queryCou3 = mysqli_query($conn,$sqlCou3);
+            $resultCou3 = $conn -> query($sqlCou3);
+            $rowCou3= $resultCou3->fetch_assoc();
+
+            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 20";
+            $queryCit = mysqli_query($conn,$sqlCit);
+            $resultCit = $conn -> query($sqlCit);
+            while($rowCit = $resultCit->fetch_assoc()){
+                echo'second.options.add(new Option("'.$rowCit['AsciiName'].'"));';
+            }
+            ?>
+        }
+
+        if(first.selectedIndex == 9)
+        {
+            <?php
+            $sqlCou2 = "SELECT *, COUNT(*) FROM travelimage GROUP BY Country_RegionCodeISO ORDER BY COUNT(*) DESC LIMIT 8,8";
+            $queryCou2 = mysqli_query($conn,$sqlCou2);
+            $resultCou2 = $conn -> query($sqlCou2);   
+            
+            $rowCou2 = $resultCou2->fetch_assoc();
+            
+            
+            $sqlCou3 = "SELECT * FROM geocountries_regions WHERE ISO = '".$rowCou2['Country_RegionCodeISO']."'";
+            $queryCou3 = mysqli_query($conn,$sqlCou3);
+            $resultCou3 = $conn -> query($sqlCou3);
+            $rowCou3= $resultCou3->fetch_assoc();
+
+            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 20";
+            $queryCit = mysqli_query($conn,$sqlCit);
+            $resultCit = $conn -> query($sqlCit);
+            while($rowCit = $resultCit->fetch_assoc()){
+                echo'second.options.add(new Option("'.$rowCit['AsciiName'].'"));';
+            }
+            ?>
+        }
+
+        if(first.selectedIndex == 10)
+        {
+            <?php
+            $sqlCou2 = "SELECT *, COUNT(*) FROM travelimage GROUP BY Country_RegionCodeISO ORDER BY COUNT(*) DESC LIMIT 9,9";
+            $queryCou2 = mysqli_query($conn,$sqlCou2);
+            $resultCou2 = $conn -> query($sqlCou2);   
+            
+            $rowCou2 = $resultCou2->fetch_assoc();
+            
+            
+            $sqlCou3 = "SELECT * FROM geocountries_regions WHERE ISO = '".$rowCou2['Country_RegionCodeISO']."'";
+            $queryCou3 = mysqli_query($conn,$sqlCou3);
+            $resultCou3 = $conn -> query($sqlCou3);
+            $rowCou3= $resultCou3->fetch_assoc();
+
+            $sqlCit = "SELECT * FROM `geocities` WHERE Country_RegionCodeISO= '".$rowCou3['ISO']."' ORDER BY Population DESC LIMIT 20";
             $queryCit = mysqli_query($conn,$sqlCit);
             $resultCit = $conn -> query($sqlCit);
             while($rowCit = $resultCit->fetch_assoc()){

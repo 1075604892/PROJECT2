@@ -39,11 +39,11 @@ EOF;
 <div class="leftguide">
     <ul>
         <li>标题搜索</li>
+        <form action="keyTitle.php" method="POST">
         <li><input type="text" name="searchtitle" class="searchinput"></li>
-        <li>
-            <button>搜索</button>
-        </li>
+        <input type="submit" value= "搜索">
         <li>热门国家</li>
+        </form>
         <div class="hot">
             <?php
 
@@ -260,8 +260,8 @@ EOF;
  $db_name="photos";
  $conn=new mysqli($servername,$db_username,$db_password,$db_name);
 
- if(empty($_GET["hotcountry"])&empty($_GET["hotcity"])&empty($_GET["hotcontent"])){
-    $_GET["hotcountry"] = "Italy";
+ if(empty($_GET["hotcountry"])&empty($_GET["hotcity"])&empty($_GET["hotcontent"])&empty($_GET["keyTitle"])){
+    $_GET["keyTitle"] = "没有搜索到结果";
  }
  
  $num_rec_per_page=15;   // 每页显示数量
@@ -299,6 +299,12 @@ else if(!empty($_GET["hotcontent"])){
      $sql1 = "SELECT * FROM travelimage WHERE Content  = '".$_GET["hotcontent"]."'";
     $query0 = mysqli_query($conn,$sql0);
     $result0 = $conn -> query($sql0);
+}else if(!empty($_GET["keyTitle"])){
+    //搜索关键字
+    $sql0 = "SELECT * FROM travelimage WHERE Title LIKE '%" .$_GET['keyTitle']."%' LIMIT $start_from, $num_rec_per_page";
+    $sql1 = "SELECT * FROM travelimage WHERE Title LIKE '%" .$_GET['keyTitle']."%'";
+    $query0 = mysqli_query($conn,$sql0);
+    $result0 = $conn -> query($sql0);
 }
 
 echo'<p class="line">';
@@ -309,6 +315,8 @@ if(!empty($_GET["hotcountry"])){
     echo $_GET["hotcity"];
 }else if(!empty($_GET["hotcontent"])){
     echo $_GET["hotcontent"];
+}else if(!empty($_GET["keyTitle"])){
+    echo $_GET["keyTitle"];
 }
 echo'</p>';
 echo'<div class="result">';
