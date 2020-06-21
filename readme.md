@@ -2,7 +2,7 @@
 
 姓名：吴祖恩
 学号：19302016001
-PJ首页网址：http://localhost/pj2/index.php
+PJ首页网址：http://localhost/PROJECT2/index.php
 
 ##项目完成情况
 
